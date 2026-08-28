@@ -4,10 +4,10 @@ export default function EducationPage() { return <div className="site-shell"><Pa
 title="Education" current="education">My formal education record.
 </PageIntro><main className="section"><div className="container">
     <article className="education-item">
-        <div className="education-year">2021-2026</div>
+        <div className="education-year">2024-2026</div>
         <div>
             <h2>Aalto University School of Business</h2>
-            <p><strong>Master of Science in Economics and Business Administration 2024-2026</strong>
+            <p><strong>Master of Science in Economics and Business Administration</strong>
             <br />Major: Information and Service Management
             <br />Focus: Business Analytics and Information Systems</p>
             <div className="field-list"><div className="field">
@@ -22,7 +22,7 @@ title="Education" current="education">My formal education record.
   <div>
     <h2>Aalto University School of Business</h2>
     <p>
-      <strong>Bachelor of Science in Economics and Business Administration 2021-2024</strong>
+      <strong>Bachelor of Science in Economics and Business Administration</strong>
       <br />
       Major: Information and Service Management
       <br />
