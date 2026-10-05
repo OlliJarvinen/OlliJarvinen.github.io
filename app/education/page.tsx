@@ -1,22 +1,49 @@
-import { Footer, PageIntro } from '../components/site';
+import { Footer, PageIntro } from "../components/site";
 
-export default function EducationPage() { return <div className="site-shell"><PageIntro label="Background / education" 
-title="Education" current="education">My formal education record.
-</PageIntro><main className="section"><div className="container">
-    <article className="education-item">
-        <div className="education-year">2024-2026</div>
-        <div>
-            <h2>Aalto University School of Business</h2>
-            <p><strong>Master of Science in Economics and Business Administration</strong>
-            <br />Major: Information and Service Management
-            <br />Focus: Business Analytics and Information Systems</p>
-            <div className="field-list"><div className="field">
-                <label>GPA</label><span>5.0</span></div><div className="field">
-                    <label>Distinctions</label><span>Graduated with honors</span></div>
-                    <div className="field"><label>Coursework</label><span>Business Intelligence, Data Science, Forecasting, Machine Learning, Optimisation</span>
-                    </div><div className="field"><label>Location</label>
-                    <span>Helsinki, Finland</span></div>
-                    </div>
+export default function EducationPage() {
+  return (
+    <div className="site-shell">
+      <PageIntro
+        label="Background / education"
+        title="Education"
+        current="education"
+      >
+        My formal education record.
+      </PageIntro>
+      <main className="section">
+        <div className="container">
+          <article className="education-item">
+            <div className="education-year">2024-2026</div>
+            <div>
+              <h2>Aalto University School of Business</h2>
+              <p>
+                <strong>
+                  Master of Science in Economics and Business Administration
+                </strong>
+                <br />Major: Information and Service Management
+                <br />Focus: Business Analytics and Information Systems
+              </p>
+              <div className="field-list">
+                <div className="field">
+                  <label>GPA</label>
+                  <span>5.0</span>
+                </div>
+                <div className="field">
+                  <label>Distinctions</label>
+                  <span>Graduated with honours</span>
+                </div>
+                <div className="field">
+                  <label>Coursework</label>
+                  <span>
+                    Business Intelligence, Data Science, Forecasting, Machine
+                    Learning, Optimisation
+                  </span>
+                </div>
+                <div className="field">
+                  <label>Location</label>
+                  <span>Helsinki, Finland</span>
+                </div>
+              </div>
               <div className="education-document">
                 <a
                   className="button subtle"
@@ -26,39 +53,48 @@ title="Education" current="education">My formal education record.
                   View master’s degree certificate (PDF)
                 </a>
                 <p id="certificate-disclaimer" className="document-note">
-                  Personal information has been redacted from this public copy
-                  for privacy.
+                  Some information has been redacted from this public copy
+                  for privacy. Original document with electronic signaturesis available as necessary.
                 </p>
               </div>
+            </div>
+          </article>
+          <article className="education-item">
+            <div className="education-year">2021–2024</div>
+            <div>
+              <h2>Aalto University School of Business</h2>
+              <p>
+                <strong>
+                  Bachelor of Science in Economics and Business Administration
+                </strong>
+                <br />
+                Major: Information and Service Management
+                <br />
+                Focus: Business Analytics
+              </p>
+              <div className="field-list">
+                <div className="field">
+                  <label>GPA</label>
+                  <span>4.18</span>
+                </div>
+                <div className="field">
+                  <label>Minor</label>
+                  <span>Computer Science</span>
+                </div>
+                <div className="field">
+                  <label>Coursework</label>
+                  <span>Python, SQL, Power BI</span>
+                </div>
+                <div className="field">
+                  <label>Location</label>
+                  <span>Helsinki, Finland</span>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-                    </article><article className="education-item">
-  <div className="education-year">2021–2024</div>
-  <div>
-    <h2>Aalto University School of Business</h2>
-    <p>
-      <strong>Bachelor of Science in Economics and Business Administration</strong>
-      <br />
-      Major: Information and Service Management
-      <br />
-      Focus: Business Analytics
-    </p>
-    <div className="field-list">
-      <div className="field">
-        <label>GPA</label>
-        <span>4.18</span>
-      </div>
-      <div className="field">
-        <label>Minor</label>
-        <span>Computer Science</span>
-      </div>
-      <div className="field">
-        <label>Coursework</label>
-        <span>Python, SQL, Power BI</span>
-      </div>
-      <div className="field">
-        <label>Location</label>
-        <span>Helsinki, Finland</span>
-      </div>
+      </main>
+      <Footer />
     </div>
-  </div>
-</article></div></main><Footer /></div>; }
+  );
+}

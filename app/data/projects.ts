@@ -1,3 +1,36 @@
-export type Project = { slug:string; number:string; title:string; question:string; summary:string; methods:string[]; problem:string; data:string; method:string; results:string; implementation:string; };
-export const projects:Project[] = [{ slug:'helsinki-cycling-infrastructure-analysis', number:'01', title:'Helsinki Cycling Infrastructure Analysis', question:'Are cycling infrastructure investments associated with increased cycling volumes in Helsinki?', summary:'A reproducible analysis concept for combining infrastructure investment data with cycling counts, with a clear path from exploratory work to a decision-ready dashboard.', methods:['Python','pandas','SQL','Power BI','statistical modelling'], problem:'Cities need to understand whether infrastructure investments are reaching the outcomes they are intended to support. This project frames the question around Helsinki and keeps the causal claim deliberately modest: association first, explanation second.', data:'Placeholder for the final data inventory: cycling counter observations, infrastructure project locations and dates, municipal open data, weather controls, and any spatial or seasonal harmonisation decisions.', method:'Placeholder for the analysis plan. The intended workflow includes data cleaning in Python, a queryable SQL layer, exploratory time-series and spatial comparisons, and a statistical model that makes assumptions visible.', results:'Results placeholder — insert validated findings, uncertainty ranges, and any limitations after the analysis is complete. No substantive findings are claimed on this portfolio page yet.', implementation:'The final project can be organised as a notebook for exploration, a small Python pipeline for repeatable transformations, a SQL data model for analysis-ready tables, and a Power BI report for communicating the result.' }];
-export function getProject(slug:string) { return projects.find((project) => project.slug === slug); }
+export type Project = {
+  slug: string;
+  number: string;
+  title: string;
+  question: string;
+  summary: string;
+  methods: string[];
+  problem: string;
+  data: string;
+  method: string;
+  results: string;
+  implementation: string;
+};
+export const projects: Project[] = [{
+  slug: "helsinki-cycling-infrastructure-analysis",
+  number: "01",
+  title: "Helsinki Cycling Infrastructure Analysis",
+  question:
+    "Are cycling infrastructure investments associated with increased cycling volumes in Helsinki?",
+  summary:
+    "A reproducible analysis concept for combining infrastructure investment data with cycling counts, with a clear path from exploratory work to a decision-ready dashboard.",
+  methods: ["Python", "pandas", "SQL", "Power BI", "statistical modelling"],
+  problem:
+    "Cities need to understand whether infrastructure investments are reaching the outcomes they are intended to support. This project frames the question around Helsinki and keeps the causal claim deliberately modest: association first, explanation second.",
+  data:
+    "Placeholder for the final data inventory: cycling counter observations, infrastructure project locations and dates, municipal open data, weather controls, and any spatial or seasonal harmonisation decisions.",
+  method:
+    "Placeholder for the analysis plan. The intended workflow includes data cleaning in Python, a queryable SQL layer, exploratory time-series and spatial comparisons, and a statistical model that makes assumptions visible.",
+  results:
+    "Results placeholder — insert validated findings, uncertainty ranges, and any limitations after the analysis is complete. No substantive findings are claimed on this portfolio page yet.",
+  implementation:
+    "The final project can be organised as a notebook for exploration, a small Python pipeline for repeatable transformations, a SQL data model for analysis-ready tables, and a Power BI report for communicating the result.",
+}];
+export function getProject(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}

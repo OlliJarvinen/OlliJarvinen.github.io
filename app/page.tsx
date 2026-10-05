@@ -1,3 +1,103 @@
-import { Footer, Header, SectionLabel, Visual } from './components/site';
+import { Footer, Header, SectionLabel, Visual } from "./components/site";
 
-export default function Home() { return <div className="site-shell"><Header /><main><section className="hero"><div className="container hero-grid"><div className="hero-copy"><SectionLabel>Portfolio / 2026</SectionLabel><h1 className="display"><span className="hero-name">Olli Järvinen</span><span className="hero-role">Data &amp; Business Analytics</span></h1><p className="lede">Analytical work, academic research, and practical ways of making business questions more legible through data.</p><div className="hero-actions"><a className="button" href="/projects">Explore selected work <span>↗</span></a><a className="button subtle" href="/about">About me <span>↗</span></a></div></div><div className="hero-figure" aria-label="Abstract analytical practice visual"><div className="figure-caption">Analytical practice / 01</div><div className="figure-stamp">OJ—DA—2026</div><div className="hero-chart" aria-hidden="true">{Array.from({ length: 10 }).map((_, i) => <span key={i} />)}</div><div className="figure-label">Question → evidence → decision</div><div className="figure-axis"><span>context</span><span>signal</span><span>action</span></div></div></div></section><section className="section section-rule" id="selected-work"><div className="container"><div className="section-heading"><h2 className="section-title">Selected work</h2><p className="section-note">A small selection of work across business analytics, service operations, and decision-making.</p></div><div className="feature-grid"><article className="feature-card accent"><Visual dark label="Master's thesis / R / DEA" /><h3>Measuring Teaching Efficiency in Higher Education</h3><p>A two-stage data envelopment analysis of university teaching as a service operations process.</p><a className="row-link" href="/thesis">Read the thesis case</a></article><article className="feature-card"><Visual label="Independent project / Python / Power BI" /><h3>Helsinki Cycling Infrastructure Analysis</h3><p>Combining open data, modelling, and visual communication to examine cycling infrastructure and volumes.</p><a className="row-link" href="/projects/helsinki-cycling-infrastructure-analysis">Open case study</a></article></div><div className="section-tail"><a className="row-link" href="/projects">View all projects</a><span>More work, methods, and context</span></div></div></section><section className="section section-compact"><div className="container"><div className="callout"><h2>Useful analysis is a form of translation.</h2><p>The work I enjoy sits between business context and technical detail: defining the problem, building a reliable view of the data, and making the output clear enough to use.</p></div></div></section></main><Footer /></div>; }
+export default function Home() {
+  return (
+    <div className="site-shell">
+      <Header />
+      <main>
+        <section className="hero">
+          <div className="container hero-grid">
+            <div className="hero-copy">
+              <SectionLabel>Personal portfolio</SectionLabel>
+              <h1 className="display">
+                <span className="hero-name">Olli Järvinen</span>
+                <span className="hero-role">Data &amp; Business Analytics</span>
+              </h1>
+              <p className="lede">
+                MsC in Economics and Business Administration, particularly interested in 
+                data-driven decision-making, busines analytics, and service opetrations.
+              </p>
+              <div className="hero-actions">
+                <a className="button" href="/projects">
+                  Explore selected work <span>↗</span>
+                </a>
+                <a className="button subtle" href="/about">
+                  About me <span>↗</span>
+                </a>
+              </div>
+            </div>
+            <div
+              className="hero-figure"
+              aria-label="Abstract analytical practice visual"
+            >
+              <div className="figure-caption">Analytical practice / 01</div>
+              <div className="figure-stamp">OJ—DA—2026</div>
+              <div className="hero-chart" aria-hidden="true">
+                {Array.from({ length: 10 }).map((_, i) => <span key={i} />)}
+              </div>
+              <div className="figure-label">Question → evidence → decision</div>
+              <div className="figure-axis">
+                <span>context</span>
+                <span>signal</span>
+                <span>action</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section section-rule" id="selected-work">
+          <div className="container">
+            <div className="section-heading">
+              <h2 className="section-title">Selected work</h2>
+              <p className="section-note">
+                A small selection of work across business analytics, service
+                operations, and decision-making.
+              </p>
+            </div>
+            <div className="feature-grid">
+              <article className="feature-card accent">
+                <Visual dark label="Master's thesis / R / DEA" />
+                <h3>Measuring Teaching Efficiency in Higher Education</h3>
+                <p>
+                  A two-stage data envelopment analysis of university teaching
+                  as a service operations process.
+                </p>
+                <a className="row-link" href="/thesis">Read the thesis case</a>
+              </article>
+              <article className="feature-card">
+                <Visual label="Independent project / Python / Power BI" />
+                <h3>Helsinki Cycling Infrastructure Analysis</h3>
+                <p>
+                  Combining open data, modelling, and visual communication to
+                  examine cycling infrastructure and volumes.
+                </p>
+                <a
+                  className="row-link"
+                  href="/projects/helsinki-cycling-infrastructure-analysis"
+                >
+                  Open case study
+                </a>
+              </article>
+            </div>
+            <div className="section-tail">
+              <a className="row-link" href="/projects">View all projects</a>
+              <span>More work, methods, and context</span>
+            </div>
+          </div>
+        </section>
+        <section className="section section-compact">
+          <div className="container">
+            <div className="callout">
+              <h2>Useful analysis is a form of translation.</h2>
+              <p>
+                The work I enjoy sits between business context and technical
+                detail: defining the problem, building a reliable view of the
+                data, and making the output clear enough to use.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
