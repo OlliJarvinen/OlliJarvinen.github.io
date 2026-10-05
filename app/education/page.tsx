@@ -16,7 +16,21 @@ title="Education" current="education">My formal education record.
                     <div className="field"><label>Coursework</label><span>Business Intelligence, Data Science, Forecasting, Machine Learning, Optimisation</span>
                     </div><div className="field"><label>Location</label>
                     <span>Helsinki, Finland</span></div>
-                    </div></div>
+                    </div>
+              <div className="education-document">
+                <a
+                  className="button subtle"
+                  href="/documents/masters-degree-certificate.pdf"
+                  aria-describedby="certificate-disclaimer"
+                >
+                  View master’s degree certificate (PDF)
+                </a>
+                <p id="certificate-disclaimer" className="document-note">
+                  Personal information has been redacted from this public copy
+                  for privacy.
+                </p>
+              </div>
+        </div>
                     </article><article className="education-item">
   <div className="education-year">2021–2024</div>
   <div>

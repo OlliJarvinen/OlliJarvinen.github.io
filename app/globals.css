@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+.education-document { margin-top:26px; }
+.education-item .document-note { max-width:520px; margin-top:12px; font-size:13px; }
 :root { --paper:#f4f1ea; --paper-deep:#e9e4d9; --ink:#102a43; --ink-soft:#4a6278; --line:#cfd5d4; --lime:#d9ed49; --coral:#f06e58; --white:#fffdf8; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
