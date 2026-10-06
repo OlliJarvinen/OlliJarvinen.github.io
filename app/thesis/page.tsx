@@ -122,8 +122,8 @@ export default function ThesisPage() {
                 <p>
                   I combined European Tertiary Education Register (ETER) data
                   with internal Aalto BIZ data, grouping institutions into four
-                  disciplinary clusters. The specialised business-school group
-                  contains 19 institutions; Nordic schools provide particularly
+                  disciplinary clusters. Pure business schools and three groups of increasingly broader and more heterogeneous peers. 
+                  Nordic business schools provide particularly
                   relevant peers for Aalto BIZ.
                 </p>
                 <div className="two-col">
@@ -166,8 +166,8 @@ export default function ThesisPage() {
                   The master’s graduate-to-enrolled-student ratio was 26.3%,
                   compared with 38.2% at Copenhagen Business School, 45.9% at
                   Stockholm School of Economics, and 52.3% at the Norwegian School
-                  of Economics. This points to completion as a priority for
-                  investigation; these stock-based ratios are not cohort graduation rates.
+                  of Economics. 
+                  Aalto BIZ is resource efficient in student intake, but its students, particularly in master's programmes, take longer to graduate than peers.
                 </p>
                 <p className="thesis-note">Source: <a href="/documents/olli-jarvinen-thesis.pdf#page=59">thesis Table 5</a>. Aggregate data cannot separate delayed completion from dropout.</p>
               </section>
@@ -178,7 +178,8 @@ export default function ThesisPage() {
                   I used the Malmquist index to distinguish Aalto BIZ’s own
                   productivity development from changes in its peers. Over
                   input years 2011–2020, gains were concentrated in capacity;
-                  completion productivity was broadly unchanged.
+                  completion productivity was broadly unchanged. 
+                  This compares favorably to other business schools, which saw declining capacity and modestly improving completion while in the full sample, both productivity measures fell.
                 </p>
                 <div className="thesis-table-wrap">
                   <table className="thesis-table">
@@ -201,11 +202,14 @@ export default function ThesisPage() {
                   per spending approximately 20% above the 2011 baseline by input
                   year 2022, using 2024 graduation outcomes.
                 </ThesisFigure>
-                <p className="thesis-note">These descriptive ratios complement DEA; they do not use its optimised weights across degree levels.</p>
+                <p className="thesis-note">
+                  These descriptive ratios complement DEA; they do not use its optimised weights across degree levels.
+                  They show the results of Aalto BIZ's productivity growth over time where the number of graduates per total spending improved ~20% between 2011 and 2022.
+                </p>
               </section>
 
               <section className="case-section" id="implications">
-                <h2>From benchmarking to decision support</h2>
+                <h2>From data analysis to decision support</h2>
                 <p>
                   My recommendations focus on master’s progression and thesis
                   supervision, planning intake alongside downstream completion
@@ -213,11 +217,8 @@ export default function ThesisPage() {
                   and educational quality together.
                 </p>
                 <div className="info-card"><h3>What the analysis can tell us</h3><p>
-                  The model identifies relative strengths and areas to investigate.
-                  It does not measure learning quality or overall university
-                  performance, and it cannot attribute score differences solely
-                  to management. Field mix, national context, student behaviour,
-                  missing data, and the selected peers all affect interpretation.
+                  The model does not directly measure learning quality or overall managerial
+                  performance. It shows where Aalto BIZ is relatively strong and where it is weaker, and how its strengths, weaknesses, and overall performance have changed over time.
                 </p></div>
               </section>
 

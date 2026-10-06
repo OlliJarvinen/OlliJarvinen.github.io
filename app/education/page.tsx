@@ -35,8 +35,8 @@ export default function EducationPage() {
                 <div className="field">
                   <label>Coursework</label>
                   <span>
-                    Business Intelligence, Data Science, Forecasting, Machine
-                    Learning, Optimisation
+                    Business Intelligence, Data Science, Forecasting, Information systems science, 
+                    Machine Learning, Optimisation
                   </span>
                 </div>
                 <div className="field">
@@ -54,7 +54,7 @@ export default function EducationPage() {
                 </a>
                 <p id="certificate-disclaimer" className="document-note">
                   Some information has been redacted from this public copy
-                  for privacy. Original document with electronic signaturesis available as necessary.
+                  for privacy. Original document with electronic signature is available as necessary.
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function EducationPage() {
                 </div>
                 <div className="field">
                   <label>Coursework</label>
-                  <span>Python, SQL, Power BI</span>
+                  <span>Borad undergraduate business studies, Data bases and data structures, Python, SQL, Power BI</span>
                 </div>
                 <div className="field">
                   <label>Location</label>

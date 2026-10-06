@@ -1,18 +1,41 @@
 import { Footer, Header, SectionLabel } from "../components/site";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="site-shell">
+    <div className="site-shell about-page">
       <Header current="about" />
       <main>
-        <section className="page-hero">
-          <div className="container">
-            <SectionLabel>Profile / about</SectionLabel>
-            <h1>About</h1>
-            <p className="lede">
-              Business analytics, data, and service operations—with a focus on
-              making complex questions easier to act on.
-            </p>
+        <section className="page-hero about-hero">
+          <div className="container about-hero-grid">
+            <div className="about-intro">
+              <SectionLabel>A little about me</SectionLabel>
+              <h1>Hi, I’m Olli<span className="title-dot">.</span></h1>
+              <p className="lede">
+                I’m curious about how businesses work, and how data can help
+                us understand them better.
+              </p>
+              <p className="about-intro-note">
+                A recent Aalto school of business graduate in ISM, interested in
+                understanding the world through the use of data and analytics.
+                
+              </p>
+              <a className="text-link" href="/projects">Explore my work ↗</a>
+            </div>
+            <figure className="about-portrait">
+              <div className="about-portrait-frame">
+                <Image
+                  src="/images/olli-jarvinen.jpg"
+                  alt="Olli Järvinen holding his Aalto University graduation folder"
+                  width={1050}
+                  height={1400}
+                  sizes="(max-width: 700px) 100vw, 360px"
+                  priority
+                  unoptimized
+                />
+              </div>
+              
+            </figure>
           </div>
         </section>
         <section className="section">
