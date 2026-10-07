@@ -19,8 +19,9 @@ export default function Home() {
             <aside className="portfolio-index" aria-label="Portfolio overview">
               <span className="index-heading">Inside this portfolio</span>
               <a href="/thesis"><span className="index-number">01</span><span>Research<strong>Teaching efficiency</strong></span><span aria-hidden="true">↗</span></a>
-              <a href="/projects/helsinki-cycling-infrastructure-analysis"><span className="index-number">02</span><span>In progress<strong>Helsinki cycling</strong></span><span aria-hidden="true">↗</span></a>
-              <a href="/education"><span className="index-number">03</span><span>Background<strong>Aalto University</strong></span><span aria-hidden="true">↗</span></a>
+              <a href="/projects/finland-fiscal-lab"><span className="index-number">02</span><span>Interactive tool<strong>Finland Fiscal Lab</strong></span><span aria-hidden="true">↗</span></a>
+              <a href="/projects/helsinki-cycling-infrastructure-analysis"><span className="index-number">03</span><span>In progress<strong>Helsinki cycling</strong></span><span aria-hidden="true">↗</span></a>
+              <a href="/education"><span className="index-number">04</span><span>Background<strong>Aalto University</strong></span><span aria-hidden="true">↗</span></a>
             </aside>
           </div>
         </section>
@@ -42,7 +43,12 @@ export default function Home() {
               </div>
             </article>
             <article className="project-strip">
-              <div className="strip-label"><span className="index-number">02</span><span className="project-status">In progress</span></div>
+              <div className="strip-label"><span className="index-number">02</span><span className="project-status">Interactive prototype</span></div>
+              <div><h3><a href="/projects/finland-fiscal-lab">Finland Fiscal Lab</a></h3><p>Explore Finland’s public finances and test policy packages with official data, visible assumptions and a bilingual simulator.</p></div>
+              <a className="row-link" href="/projects/finland-fiscal-lab">Explore the project</a>
+            </article>
+            <article className="project-strip">
+              <div className="strip-label"><span className="index-number">03</span><span className="project-status">In progress</span></div>
               <div><h3><a href="/projects/helsinki-cycling-infrastructure-analysis">Helsinki cycling infrastructure</a></h3><p>An analysis concept exploring infrastructure investment and cycling volumes using open data.</p></div>
               <a className="row-link" href="/projects/helsinki-cycling-infrastructure-analysis">View the project</a>
             </article>

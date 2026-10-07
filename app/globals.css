@@ -180,3 +180,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible { outline:3px solid v
 }
 @media (max-width:380px) { .main-nav { flex-wrap:wrap; justify-content:flex-start; gap:2px 18px; }.display { font-size:50px; }.diagram-flow { font-size:20px; }.section-heading { align-items:flex-start; flex-direction:column; gap:8px; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none !important; } }
+
+/* Working project case studies */
+.case-actions { display:flex; flex-wrap:wrap; align-items:center; gap:18px; margin-top:24px; }
+.case-actions > span { color:var(--ink-soft); font-size:15px; }
+.case-image { margin:0; }
+.case-image img { display:block; width:100%; height:auto; border:1px solid var(--line); background:var(--white); }
+.case-image figcaption { padding:12px 0 18px; font-size:15px; color:var(--ink-soft); }
+.case-section .info-card .text-link { display:inline-block; margin-top:16px; }
