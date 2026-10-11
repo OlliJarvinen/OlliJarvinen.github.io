@@ -44,7 +44,7 @@ export default function Home() {
             </article>
             <article className="project-strip">
               <div className="strip-label"><span className="index-number">02</span><span className="project-status">Interactive prototype</span></div>
-              <div><h3><a href="/projects/finland-fiscal-lab">Finland Fiscal Lab</a></h3><p>Explore Finland’s public finances and test policy packages with official data, visible assumptions and a bilingual simulator.</p></div>
+              <div><h3><a href="/projects/finland-fiscal-lab">Finland Fiscal Lab</a></h3><p>Finland’s deficit is only part of the story. Explore how interest costs and policy trade-offs shape the path of public debt.</p></div>
               <a className="row-link" href="/projects/finland-fiscal-lab">Explore the project</a>
             </article>
             <article className="project-strip">

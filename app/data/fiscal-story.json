@@ -1,0 +1,942 @@
+{
+  "asOf": "7 October 2026",
+  "history": [
+    {
+      "year": 2010,
+      "debt_ratio": 50.112943602608595,
+      "revenue": 96789.0,
+      "expenditure": 101633.0,
+      "balance": -4844.0,
+      "interest": 2638.0,
+      "primary_balance": -2206.0
+    },
+    {
+      "year": 2011,
+      "debt_ratio": 52.02448711138095,
+      "revenue": 104400.0,
+      "expenditure": 106402.0,
+      "balance": -2002.0,
+      "interest": 2862.0,
+      "primary_balance": 860.0
+    },
+    {
+      "year": 2012,
+      "debt_ratio": 57.856151872960105,
+      "revenue": 107295.0,
+      "expenditure": 111605.0,
+      "balance": -4310.0,
+      "interest": 2987.0,
+      "primary_balance": -1323.0
+    },
+    {
+      "year": 2013,
+      "debt_ratio": 60.81170729789628,
+      "revenue": 111078.0,
+      "expenditure": 116210.0,
+      "balance": -5132.0,
+      "interest": 2746.0,
+      "primary_balance": -2386.0
+    },
+    {
+      "year": 2014,
+      "debt_ratio": 64.81261081829443,
+      "revenue": 112459.0,
+      "expenditure": 118624.0,
+      "balance": -6165.0,
+      "interest": 2779.0,
+      "primary_balance": -3386.0
+    },
+    {
+      "year": 2015,
+      "debt_ratio": 68.764272664992,
+      "revenue": 112067.0,
+      "expenditure": 117168.0,
+      "balance": -5101.0,
+      "interest": 2668.0,
+      "primary_balance": -2433.0
+    },
+    {
+      "year": 2016,
+      "debt_ratio": 68.64920242725422,
+      "revenue": 115198.0,
+      "expenditure": 118868.0,
+      "balance": -3670.0,
+      "interest": 2572.0,
+      "primary_balance": -1098.0
+    },
+    {
+      "year": 2017,
+      "debt_ratio": 66.58077665927924,
+      "revenue": 117342.0,
+      "expenditure": 118756.0,
+      "balance": -1414.0,
+      "interest": 2416.0,
+      "primary_balance": 1002.0
+    },
+    {
+      "year": 2018,
+      "debt_ratio": 65.35822858498092,
+      "revenue": 120113.0,
+      "expenditure": 122135.0,
+      "balance": -2022.0,
+      "interest": 2338.0,
+      "primary_balance": 316.0
+    },
+    {
+      "year": 2019,
+      "debt_ratio": 65.32798363226256,
+      "revenue": 123231.0,
+      "expenditure": 125459.0,
+      "balance": -2228.0,
+      "interest": 2113.0,
+      "primary_balance": -115.0
+    },
+    {
+      "year": 2020,
+      "debt_ratio": 75.31717057198577,
+      "revenue": 120365.0,
+      "expenditure": 133447.0,
+      "balance": -13082.0,
+      "interest": 1697.0,
+      "primary_balance": -11385.0
+    },
+    {
+      "year": 2021,
+      "debt_ratio": 73.12593462076507,
+      "revenue": 130505.0,
+      "expenditure": 137103.0,
+      "balance": -6598.0,
+      "interest": 1381.0,
+      "primary_balance": -5217.0
+    },
+    {
+      "year": 2022,
+      "debt_ratio": 74.09370306659791,
+      "revenue": 139608.0,
+      "expenditure": 140085.0,
+      "balance": -477.0,
+      "interest": 1554.0,
+      "primary_balance": 1077.0
+    },
+    {
+      "year": 2023,
+      "debt_ratio": 77.19654609786056,
+      "revenue": 144809.0,
+      "expenditure": 152878.0,
+      "balance": -8069.0,
+      "interest": 3138.0,
+      "primary_balance": -4931.0
+    },
+    {
+      "year": 2024,
+      "debt_ratio": 82.47371908846971,
+      "revenue": 147513.0,
+      "expenditure": 159790.0,
+      "balance": -12277.0,
+      "interest": 4295.0,
+      "primary_balance": -7982.0
+    },
+    {
+      "year": 2025,
+      "debt_ratio": 88.4457188687749,
+      "revenue": 151221.0,
+      "expenditure": 161966.0,
+      "balance": -10745.0,
+      "interest": 4525.0,
+      "primary_balance": -6220.0
+    }
+  ],
+  "forecast": [
+    {
+      "year": 2025,
+      "debt_ratio": 88.45214361525146,
+      "revenue": 151211.0,
+      "expenditure": 162025.0,
+      "balance": -10814.0,
+      "interest": 4506.784000000001
+    },
+    {
+      "year": 2026,
+      "debt_ratio": 90.13409817714707,
+      "revenue": 156785.2385834739,
+      "expenditure": 168992.6515904465,
+      "balance": -12207.413006972603,
+      "interest": 4979.330599999999
+    },
+    {
+      "year": 2027,
+      "debt_ratio": 91.2216526660055,
+      "revenue": 160352.65775420444,
+      "expenditure": 174007.00363072922,
+      "balance": -13654.34587652477,
+      "interest": 6091.826
+    },
+    {
+      "year": 2028,
+      "debt_ratio": 93.12349362648867,
+      "revenue": 165627.936609662,
+      "expenditure": 179727.57273935815,
+      "balance": -14099.636129696162,
+      "interest": 6654.351900000001
+    },
+    {
+      "year": 2029,
+      "debt_ratio": 95.32052917486864,
+      "revenue": 171729.64412600631,
+      "expenditure": 186758.55919502492,
+      "balance": -15028.915069018609,
+      "interest": 7566.487099999999
+    },
+    {
+      "year": 2030,
+      "debt_ratio": 97.57701469275841,
+      "revenue": 176980.66295669827,
+      "expenditure": 192125.59770921568,
+      "balance": -15144.934752517422,
+      "interest": 8177.4936
+    }
+  ],
+  "packages": [
+    {
+      "id": "spending",
+      "name": "Expenditure-led",
+      "tradeoff": "Service reductions, pension-index freezing and targeted grant and administration cuts; income taxation covers part of the adjustment.",
+      "condition": "Protect minimum benefits and defence. Procurement, service networks and staffing must deliver real consolidated savings. Large health and education reductions cannot be promised through administration alone.",
+      "rows": [
+        {
+          "year": 2026,
+          "debt_ratio": 90.13409817714707,
+          "revenue": 156785.2385834739,
+          "expenditure": 168992.6515904465,
+          "balance": -12207.413006972622,
+          "interest": 4979.330599999999,
+          "primary_balance": -7228.082406972622,
+          "direct_effect": 0.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2027,
+          "debt_ratio": 88.99194354430702,
+          "revenue": 162152.65775420444,
+          "expenditure": 169015.50363072922,
+          "balance": -6862.845876524777,
+          "interest": 6091.826,
+          "primary_balance": -771.0198765247769,
+          "direct_effect": 6791.5,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2028,
+          "debt_ratio": 88.78560062298482,
+          "revenue": 167427.936609662,
+          "expenditure": 173813.42200132838,
+          "balance": -6385.4853916663715,
+          "interest": 6491.701161970225,
+          "primary_balance": 106.21577030385379,
+          "direct_effect": 7551.5,
+          "policy_asset_retention": 760.0
+        },
+        {
+          "year": 2029,
+          "debt_ratio": 88.97067202283237,
+          "revenue": 173529.64412600634,
+          "expenditure": 179814.5959210004,
+          "balance": -6284.9517949940755,
+          "interest": 7214.023825975496,
+          "primary_balance": 929.0720309814205,
+          "direct_effect": 8391.5,
+          "policy_asset_retention": 1600.0
+        },
+        {
+          "year": 2030,
+          "debt_ratio": 89.29304916472664,
+          "revenue": 178780.6629566983,
+          "expenditure": 184289.34710122828,
+          "balance": -5508.684144529991,
+          "interest": 7632.742992012598,
+          "primary_balance": 2124.0588474826072,
+          "direct_effect": 9091.5,
+          "policy_asset_retention": 2300.0
+        }
+      ],
+      "components": [
+        {
+          "id": "pension-index-freeze",
+          "category": "expenditure",
+          "amount": 2300.0,
+          "evidence": "pension_gross_estimate",
+          "source_id": "etk-pension-options-2026",
+          "name": "Freeze earnings-pension index 2028\u20132031"
+        },
+        {
+          "id": "broad-income-tax",
+          "category": "revenue",
+          "amount": 1800.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Broad earned-income tax increase"
+        },
+        {
+          "id": "education-services-envelope",
+          "category": "expenditure",
+          "amount": 1727.0,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce external education spending"
+        },
+        {
+          "id": "health-services-envelope",
+          "category": "expenditure",
+          "amount": 1706.4,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce external health spending"
+        },
+        {
+          "id": "administration-operations",
+          "category": "expenditure",
+          "amount": 500.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce administration operating costs"
+        },
+        {
+          "id": "culture-envelope",
+          "category": "expenditure",
+          "amount": 458.1,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce culture and recreation spending"
+        },
+        {
+          "id": "business-grants",
+          "category": "expenditure",
+          "amount": 400.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce direct business grants"
+        },
+        {
+          "id": "development-aid",
+          "category": "expenditure",
+          "amount": 200.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce development cooperation"
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "name": "Revenue-led",
+      "tradeoff": "Protect service expenditure and food VAT; broaden the mix of income, corporate, wealth, capital and excise taxes.",
+      "condition": "Keep health, education and pension budgets intact. Broad tax increases are required: the corporate rate rises from the VM baseline of 18% to 24%. Low-income compensation would reduce the total unless financed separately.",
+      "rows": [
+        {
+          "year": 2026,
+          "debt_ratio": 90.13409817714707,
+          "revenue": 156785.2385834739,
+          "expenditure": 168992.6515904465,
+          "balance": -12207.413006972622,
+          "interest": 4979.330599999999,
+          "primary_balance": -7228.082406972622,
+          "direct_effect": 0.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2027,
+          "debt_ratio": 88.43102798302867,
+          "revenue": 168852.65775420444,
+          "expenditure": 174007.00363072922,
+          "balance": -5154.345876524777,
+          "interest": 6091.826,
+          "primary_balance": 937.4801234752231,
+          "direct_effect": 8500.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2028,
+          "debt_ratio": 87.6943409312398,
+          "revenue": 174127.936609662,
+          "expenditure": 179524.00485696792,
+          "balance": -5396.06824730594,
+          "interest": 6450.784017609793,
+          "primary_balance": 1054.7157703038538,
+          "direct_effect": 8500.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2029,
+          "debt_ratio": 87.37327366543653,
+          "revenue": 180229.64412600634,
+          "expenditure": 186317.42868936222,
+          "balance": -6087.784563355872,
+          "interest": 7125.356594337292,
+          "primary_balance": 1037.5720309814205,
+          "direct_effect": 8500.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2030,
+          "debt_ratio": 87.20909788671115,
+          "revenue": 185480.6629566983,
+          "expenditure": 191443.8072111088,
+          "balance": -5963.144254410506,
+          "interest": 7495.703101893113,
+          "primary_balance": 1532.5588474826072,
+          "direct_effect": 8500.0,
+          "policy_asset_retention": 0.0
+        }
+      ],
+      "components": [
+        {
+          "id": "corporate-rate-wide",
+          "category": "revenue",
+          "amount": 2640.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Corporate tax rate: 18\u201324%"
+        },
+        {
+          "id": "broad-income-tax",
+          "category": "revenue",
+          "amount": 2400.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Broad earned-income tax increase"
+        },
+        {
+          "id": "general-vat",
+          "category": "revenue",
+          "amount": 1230.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise the general VAT rate"
+        },
+        {
+          "id": "wealth-tax",
+          "category": "revenue",
+          "amount": 1000.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Wealth tax"
+        },
+        {
+          "id": "capital-tax",
+          "category": "revenue",
+          "amount": 330.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise both capital-income tax rates"
+        },
+        {
+          "id": "sugar-tax",
+          "category": "revenue",
+          "amount": 300.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Sugar-based health tax"
+        },
+        {
+          "id": "bank-tax",
+          "category": "revenue",
+          "amount": 200.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Bank tax"
+        },
+        {
+          "id": "insurance-tax",
+          "category": "revenue",
+          "amount": 200.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Tax insurance wrappers"
+        },
+        {
+          "id": "flight-tax",
+          "category": "revenue",
+          "amount": 200.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Flight tax"
+        }
+      ]
+    },
+    {
+      "id": "mixed",
+      "name": "Mixed",
+      "tradeoff": "Smaller health and education reductions, grant and administration cuts, and a broader tax mix; includes a 200m minimum-benefit cost estimate.",
+      "condition": "Prioritise access to essential treatment and compulsory education within smaller budgets. Savings must come from explicitly chosen service scope, purchasing and networks. Protecting all services would require additional taxes.",
+      "rows": [
+        {
+          "year": 2026,
+          "debt_ratio": 90.13409817714707,
+          "revenue": 156785.2385834739,
+          "expenditure": 168992.6515904465,
+          "balance": -12207.413006972622,
+          "interest": 4979.330599999999,
+          "primary_balance": -7228.082406972622,
+          "direct_effect": 0.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2027,
+          "debt_ratio": 88.46482737257132,
+          "revenue": 166662.65775420444,
+          "expenditure": 171919.95363072923,
+          "balance": -5257.295876524789,
+          "interest": 6091.826,
+          "primary_balance": 834.5301234752114,
+          "direct_effect": 8397.05,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2028,
+          "debt_ratio": 87.76009755123697,
+          "revenue": 171937.936609662,
+          "expenditure": 177439.42042326112,
+          "balance": -5501.483813599137,
+          "interest": 6453.249583902979,
+          "primary_balance": 951.7657703038421,
+          "direct_effect": 8397.05,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2029,
+          "debt_ratio": 87.46952895422433,
+          "revenue": 178039.64412600634,
+          "expenditure": 184235.7215582514,
+          "balance": -6196.077432245058,
+          "interest": 7130.699463226467,
+          "primary_balance": 934.6220309814089,
+          "direct_effect": 8397.05,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2030,
+          "debt_ratio": 87.33467165555619,
+          "revenue": 183290.6629566983,
+          "expenditure": 189365.0148972006,
+          "balance": -6074.351940502298,
+          "interest": 7503.960787984894,
+          "primary_balance": 1429.6088474825956,
+          "direct_effect": 8397.05,
+          "policy_asset_retention": 0.0
+        }
+      ],
+      "components": [
+        {
+          "id": "broad-income-tax",
+          "category": "revenue",
+          "amount": 1800.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Broad earned-income tax increase"
+        },
+        {
+          "id": "corporate-rate-wide",
+          "category": "revenue",
+          "amount": 1760.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Corporate tax rate: 18\u201324%"
+        },
+        {
+          "id": "general-vat",
+          "category": "revenue",
+          "amount": 1230.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise the general VAT rate"
+        },
+        {
+          "id": "wealth-tax",
+          "category": "revenue",
+          "amount": 1000.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Wealth tax"
+        },
+        {
+          "id": "health-services-envelope",
+          "category": "expenditure",
+          "amount": 639.9,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce external health spending"
+        },
+        {
+          "id": "education-services-envelope",
+          "category": "expenditure",
+          "amount": 518.1,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce external education spending"
+        },
+        {
+          "id": "administration-operations",
+          "category": "expenditure",
+          "amount": 500.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce administration operating costs"
+        },
+        {
+          "id": "business-grants",
+          "category": "expenditure",
+          "amount": 400.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce direct business grants"
+        },
+        {
+          "id": "sugar-tax",
+          "category": "revenue",
+          "amount": 300.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Sugar-based health tax"
+        },
+        {
+          "id": "culture-envelope",
+          "category": "expenditure",
+          "amount": 229.05,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce culture and recreation spending"
+        },
+        {
+          "id": "capital-tax",
+          "category": "revenue",
+          "amount": 220.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise both capital-income tax rates"
+        },
+        {
+          "id": "minimum-benefits",
+          "category": "expenditure",
+          "amount": -200.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Increase minimum benefits"
+        }
+      ]
+    },
+    {
+      "id": "lighter",
+      "name": "Smaller adjustment",
+      "tradeoff": "Milder taxes and service reductions, targeted grant and administration cuts, and a 100m adult-training cost estimate. More debt remains.",
+      "condition": "Protect pension indices, food VAT and minimum benefits. Accept more debt rather than claim that growth will close the remaining gap. Future budgets must finance the extra interest.",
+      "rows": [
+        {
+          "year": 2026,
+          "debt_ratio": 90.13409817714707,
+          "revenue": 156785.2385834739,
+          "expenditure": 168992.6515904465,
+          "balance": -12207.413006972622,
+          "interest": 4979.330599999999,
+          "primary_balance": -7228.082406972622,
+          "direct_effect": 0.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2027,
+          "debt_ratio": 89.98821953774478,
+          "revenue": 162850.15775420444,
+          "expenditure": 172747.57363072922,
+          "balance": -9897.415876524785,
+          "interest": 6091.826,
+          "primary_balance": -3805.589876524784,
+          "direct_effect": 3756.9300000000003,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2028,
+          "debt_ratio": 90.72385284585792,
+          "revenue": 168125.436609662,
+          "expenditure": 178378.16741178307,
+          "balance": -10252.730802121067,
+          "interest": 6564.376572424913,
+          "primary_balance": -3688.354229696153,
+          "direct_effect": 3756.9300000000003,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2029,
+          "debt_ratio": 91.80790768768617,
+          "revenue": 174227.14412600634,
+          "expenditure": 185304.15314436148,
+          "balance": -11077.009018355127,
+          "interest": 7371.511049336541,
+          "primary_balance": -3705.4979690185864,
+          "direct_effect": 3756.9300000000003,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2030,
+          "debt_ratio": 92.99448084732978,
+          "revenue": 179478.1629566983,
+          "expenditure": 190564.82192379775,
+          "balance": -11086.658967099433,
+          "interest": 7876.147814582034,
+          "primary_balance": -3210.5111525173998,
+          "direct_effect": 3756.9300000000003,
+          "policy_asset_retention": 0.0
+        }
+      ],
+      "components": [
+        {
+          "id": "broad-income-tax",
+          "category": "revenue",
+          "amount": 1200.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Broad earned-income tax increase"
+        },
+        {
+          "id": "corporate-rate-wide",
+          "category": "revenue",
+          "amount": 880.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Corporate tax rate: 18\u201324%"
+        },
+        {
+          "id": "health-services-envelope",
+          "category": "expenditure",
+          "amount": 426.6,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce external health spending"
+        },
+        {
+          "id": "education-services-envelope",
+          "category": "expenditure",
+          "amount": 345.40000000000003,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce external education spending"
+        },
+        {
+          "id": "general-vat",
+          "category": "revenue",
+          "amount": 307.5,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise the general VAT rate"
+        },
+        {
+          "id": "administration-operations",
+          "category": "expenditure",
+          "amount": 250.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce administration operating costs"
+        },
+        {
+          "id": "business-grants",
+          "category": "expenditure",
+          "amount": 200.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce direct business grants"
+        },
+        {
+          "id": "culture-envelope",
+          "category": "expenditure",
+          "amount": 137.43,
+          "evidence": "spending_envelope",
+          "source_id": "functions",
+          "name": "Reduce culture and recreation spending"
+        },
+        {
+          "id": "capital-tax",
+          "category": "revenue",
+          "amount": 110.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise both capital-income tax rates"
+        },
+        {
+          "id": "adult-training",
+          "category": "expenditure",
+          "amount": -100.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "New adult education support"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "name": "Protect basic services",
+      "tradeoff": "No broad health, education or pension-index cut. Taxes and targeted operating and grant cuts finance the adjustment and a minimum-benefit cost envelope.",
+      "condition": "Tax-base and sector boundaries need implementation costings. Minimum-benefit compensation is included as a 200m estimate; household impacts are not microsimulated.",
+      "rows": [
+        {
+          "year": 2026,
+          "debt_ratio": 90.13409817714707,
+          "revenue": 156785.2385834739,
+          "expenditure": 168992.6515904465,
+          "balance": -12207.413006972622,
+          "interest": 4979.330599999999,
+          "primary_balance": -7228.082406972622,
+          "direct_effect": 0.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2027,
+          "debt_ratio": 88.3949140165431,
+          "revenue": 168262.65775420444,
+          "expenditure": 173307.00363072922,
+          "balance": -5044.345876524777,
+          "interest": 6091.826,
+          "primary_balance": 1047.480123475223,
+          "direct_effect": 8610.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2028,
+          "debt_ratio": 87.62408130812481,
+          "revenue": 173537.936609662,
+          "expenditure": 178821.37044907818,
+          "balance": -5283.433839416184,
+          "interest": 6448.149609720038,
+          "primary_balance": 1164.7157703038538,
+          "direct_effect": 8610.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2029,
+          "debt_ratio": 87.27042682943214,
+          "revenue": 179639.64412600634,
+          "expenditure": 185611.71994164187,
+          "balance": -5972.075815635531,
+          "interest": 7119.647846616952,
+          "primary_balance": 1147.5720309814205,
+          "direct_effect": 8610.0,
+          "policy_asset_retention": 0.0
+        },
+        {
+          "year": 2030,
+          "debt_ratio": 87.07492484569174,
+          "revenue": 184890.6629566983,
+          "expenditure": 190734.98403995685,
+          "balance": -5844.321083258536,
+          "interest": 7486.879930741144,
+          "primary_balance": 1642.5588474826072,
+          "direct_effect": 8610.0,
+          "policy_asset_retention": 0.0
+        }
+      ],
+      "components": [
+        {
+          "id": "broad-income-tax",
+          "category": "revenue",
+          "amount": 2400.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Broad earned-income tax increase"
+        },
+        {
+          "id": "corporate-rate-wide",
+          "category": "revenue",
+          "amount": 1760.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Corporate tax rate: 18\u201324%"
+        },
+        {
+          "id": "general-vat",
+          "category": "revenue",
+          "amount": 1230.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise the general VAT rate"
+        },
+        {
+          "id": "wealth-tax",
+          "category": "revenue",
+          "amount": 1000.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Wealth tax"
+        },
+        {
+          "id": "administration-operations",
+          "category": "expenditure",
+          "amount": 500.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce administration operating costs"
+        },
+        {
+          "id": "wood-fuel-tax",
+          "category": "revenue",
+          "amount": 400.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Remove wood-fuel tax relief"
+        },
+        {
+          "id": "business-grants",
+          "category": "expenditure",
+          "amount": 400.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Reduce direct business grants"
+        },
+        {
+          "id": "sugar-tax",
+          "category": "revenue",
+          "amount": 300.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Sugar-based health tax"
+        },
+        {
+          "id": "capital-tax",
+          "category": "revenue",
+          "amount": 220.0,
+          "evidence": "historical_calibration",
+          "source_id": "vm-tax-options-2023",
+          "name": "Raise both capital-income tax rates"
+        },
+        {
+          "id": "bank-tax",
+          "category": "revenue",
+          "amount": 200.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Bank tax"
+        },
+        {
+          "id": "insurance-tax",
+          "category": "revenue",
+          "amount": 200.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Tax insurance wrappers"
+        },
+        {
+          "id": "flight-tax",
+          "category": "revenue",
+          "amount": 200.0,
+          "evidence": "party_reference",
+          "source_id": "vasemmisto-2026",
+          "name": "Flight tax"
+        },
+        {
+          "id": "minimum-benefits",
+          "category": "expenditure",
+          "amount": -200.0,
+          "evidence": "illustrative_estimate",
+          "source_id": "illustrative-options-2026",
+          "name": "Increase minimum benefits"
+        }
+      ]
+    }
+  ]
+}

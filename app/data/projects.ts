@@ -39,7 +39,7 @@ export const projects: Project[] = [{
   number: '02',
   title: 'Finland Fiscal Lab',
   question: 'How do policy choices and economic assumptions change Finland’s deficit and public-debt trajectory?',
-  summary: 'A bilingual public-finance explorer and interactive fiscal-policy simulator combining official Finnish and European data with transparent assumptions and source-backed policy scenarios.',
+  summary: 'Why closing Finland’s deficit takes more than a savings target: a data story about interest, debt and the trade-offs behind fiscal adjustment.',
   methods: ['Python', 'SQL', 'TypeScript', 'React', 'fiscal modelling', 'open data'],
   problem: 'Public-finance debate combines historical observations, forecasts and policy estimates that often use different years, scopes and assumptions. This project makes those distinctions visible and lets users explore the accounting consequences of alternative policy packages.',
   data: 'Preserved Statistics Finland accounts and debt observations, the Ministry of Finance Autumn 2026 forecast, a 2024 Eurostat comparison for 15 EU countries and two aggregates, and a structured policy evidence registry. Queries, dates, checksums and forecast workbook coordinates preserve provenance.',

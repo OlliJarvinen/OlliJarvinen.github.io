@@ -1,3 +1,4 @@
+import { FiscalCaseStudy } from "../../components/fiscal-case-study";
 import { notFound } from "next/navigation";
 import { Footer, Header, SectionLabel, Tags, Visual } from "../../components/site";
 import { getProject, projects } from "../../data/projects";
@@ -12,6 +13,7 @@ export default function ProjectCaseStudy(
 ) {
   const project = getProject(params.slug);
   if (!project) notFound();
+  if (project.slug === "finland-fiscal-lab") return <FiscalCaseStudy />;
   return (
     <div className="site-shell">
       <Header current="projects" />
