@@ -30,7 +30,7 @@ export default function EducationPage() {
                 </div>
                 <div className="field">
                   <label>Distinctions</label>
-                  <span>Graduated with honours</span>
+                  <span>Graduated with honours, Dean's List 2026</span>
                 </div>
                 <div className="field">
                   <label>Coursework</label>
