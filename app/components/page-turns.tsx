@@ -15,10 +15,19 @@ export function PageTurns() {
     );
     let turning = false;
     let cancelled = false;
+    let turnId = 0;
     const animations: Animation[] = [];
 
-    function enter() {
+    function reset() {
+      turnId++;
       turning = false;
+      animations.splice(0).forEach((animation) => animation.cancel());
+    }
+
+    function enter() {
+      // A cached document can still hold the outgoing fill-forwards animation.
+      // Clear it before entering, otherwise it wins again once entry finishes.
+      reset();
       if (motion.matches) return;
       sheets().forEach((sheet) => animations.push(sheet.animate([
         { transform: "perspective(1600px) rotateY(24deg)", opacity: 0.25 },
@@ -41,26 +50,33 @@ export function PageTurns() {
       event.preventDefault();
       event.stopPropagation();
       if (turning) return;
+      reset();
       turning = true;
-      animations.forEach((animation) => animation.cancel());
+      const currentTurn = turnId;
       const outgoing = Array.from(sheets(), (sheet) => sheet.animate([
         { transform: "perspective(1600px) rotateY(0deg)", opacity: 1 },
         { transform: "perspective(1600px) rotateY(-55deg)", opacity: 0.15 },
       ], { duration: 300, easing: "ease-in", fill: "forwards" }));
       animations.push(...outgoing);
       Promise.all(outgoing.map((animation) => animation.finished)).then(() => {
-        if (!cancelled) router.push(destination.pathname + destination.search + destination.hash);
+        if (!cancelled && currentTurn === turnId) {
+          router.push(destination.pathname + destination.search + destination.hash);
+        }
       }).catch(() => { /* A route change or unmount cancelled the turn. */ });
     }
 
     enter();
     document.addEventListener("click", turn, true);
     window.addEventListener("pageshow", enter);
+    window.addEventListener("pagehide", reset);
+    window.addEventListener("popstate", reset);
     return () => {
       cancelled = true;
-      animations.forEach((animation) => animation.cancel());
+      reset();
       document.removeEventListener("click", turn, true);
       window.removeEventListener("pageshow", enter);
+      window.removeEventListener("pagehide", reset);
+      window.removeEventListener("popstate", reset);
     };
   }, [pathname, router]);
 
