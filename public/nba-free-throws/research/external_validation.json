@@ -1,0 +1,58 @@
+[
+  {
+    "check": "SGA all FT season totals",
+    "season": 2024,
+    "source": "https://cdn.nba.com/teams/uploads/sites/1610612760/2025/10/Thunder-Media-Guide-2025-26_WEB.pdf",
+    "observed": [
+      601,
+      669
+    ],
+    "reference": [
+      601,
+      669
+    ],
+    "pass": true
+  },
+  {
+    "check": "SGA all FT season totals",
+    "season": 2022,
+    "source": "https://cdn.nba.com/teams/uploads/sites/1610612760/2024/10/2024-25-Thunder-Media-Guide.pdf",
+    "observed": [
+      669,
+      739
+    ],
+    "reference": [
+      669,
+      739
+    ],
+    "pass": true
+  },
+  {
+    "check": "WSH at IND game boxscore",
+    "team": "WSH",
+    "source": "https://www.espn.com/nba/boxscore/_/gameId/401584692",
+    "observed": [
+      23,
+      29
+    ],
+    "reference": [
+      23,
+      29
+    ],
+    "pass": true
+  },
+  {
+    "check": "WSH at IND game boxscore",
+    "team": "IND",
+    "source": "https://www.espn.com/nba/boxscore/_/gameId/401584692",
+    "observed": [
+      11,
+      12
+    ],
+    "reference": [
+      11,
+      12
+    ],
+    "pass": true
+  }
+]

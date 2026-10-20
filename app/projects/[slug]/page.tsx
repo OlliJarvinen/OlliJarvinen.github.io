@@ -24,7 +24,7 @@ export default function ProjectCaseStudy(
             <h1>{project.title}</h1>
             <p className="case-question">{project.question}</p>
             <Tags items={project.methods} />
-            {project.demoUrl && <div className="case-actions"><a className="button" href={`${basePath}${project.demoUrl}`}>Open interactive tool <span aria-hidden="true">↗</span></a><span>English / Suomi · exploratory prototype</span></div>}
+            {project.demoUrl && <div className="case-actions"><a className="button" href={`${basePath}${project.demoUrl}`}>{project.demoLabel ?? "Open interactive tool"} <span aria-hidden="true">↗</span></a><span>{project.demoNote ?? "English / Suomi · exploratory prototype"}</span></div>}
           </div>
         </section>
         <div className="container">
@@ -49,7 +49,7 @@ export default function ProjectCaseStudy(
               </section>
               <section className="case-section" id="implementation">
                 <h2>Technical implementation</h2><p>{project.implementation}</p>
-                {project.demoUrl ? <div className="info-card"><h3>Explore the working application</h3><p>Build a package, inspect its sources and assumptions, and download its annual results.</p><a className="text-link" href={`${basePath}${project.demoUrl}`}>Open Finland Fiscal Lab ↗</a></div> : <div className="two-col"><div className="info-card"><h3>Repository</h3><p>The repository link will be added when this project is published.</p></div><div className="info-card"><h3>Live dashboard</h3><p>The dashboard link will be added when a final version is available.</p></div></div>}
+                {project.demoUrl ? <div className="info-card"><h3>Explore the working application</h3><p>{project.demoDescription ?? "Build a package, inspect its sources and assumptions, and download its annual results."}</p><a className="text-link" href={`${basePath}${project.demoUrl}`}>{project.demoLabel ?? "Open Finland Fiscal Lab"} ↗</a></div> : <div className="two-col"><div className="info-card"><h3>Repository</h3><p>The repository link will be added when this project is published.</p></div><div className="info-card"><h3>Live dashboard</h3><p>The dashboard link will be added when a final version is available.</p></div></div>}
               </section>
             </div>
           </div>

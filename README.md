@@ -50,3 +50,7 @@ npm run build
 ```
 
 The update command requires the Fiscal Lab source checkout and its build dependencies. GitHub Pages builds need only the already-prepared public files. The tool is an exploratory prototype: its policy estimates and illustrative assumptions are not official forecasts or validated reform costings.
+
+## NBA free-throw research
+
+The NBA case study replaces the Helsinki cycling placeholder at `/projects/nba-free-throws`. The self-contained interactive report is tracked under `public/nba-free-throws/` and served at `/nba-free-throws/` (retain the trailing slash for relative assets and downloads). Build the research project's `web/` directory to refresh its static assets, then copy `web/dist/` into this public directory and retain the return link in `index.html`. The case-study figures use the full-sample findings documented on 16 October 2026; regenerate them when estimates change.

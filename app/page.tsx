@@ -20,7 +20,7 @@ export default function Home() {
               <span className="index-heading">Inside this portfolio</span>
               <a href="/thesis"><span className="index-number">01</span><span>Research<strong>Teaching efficiency</strong></span><span aria-hidden="true">↗</span></a>
               <a href="/projects/finland-fiscal-lab"><span className="index-number">02</span><span>Interactive tool<strong>Finland Fiscal Lab</strong></span><span aria-hidden="true">↗</span></a>
-              <a href="/projects/helsinki-cycling-infrastructure-analysis"><span className="index-number">03</span><span>In progress<strong>Helsinki cycling</strong></span><span aria-hidden="true">↗</span></a>
+              <a href="/projects/nba-free-throws"><span className="index-number">03</span><span>Interactive research<strong>NBA free throws</strong></span><span aria-hidden="true">↗</span></a>
               <a href="/education"><span className="index-number">04</span><span>Background<strong>Aalto University</strong></span><span aria-hidden="true">↗</span></a>
             </aside>
           </div>
@@ -48,9 +48,9 @@ export default function Home() {
               <a className="row-link" href="/projects/finland-fiscal-lab">Explore the project</a>
             </article>
             <article className="project-strip">
-              <div className="strip-label"><span className="index-number">03</span><span className="project-status">In progress</span></div>
-              <div><h3><a href="/projects/helsinki-cycling-infrastructure-analysis">Helsinki cycling infrastructure</a></h3><p>An analysis concept exploring infrastructure investment and cycling volumes using open data.</p></div>
-              <a className="row-link" href="/projects/helsinki-cycling-infrastructure-analysis">View the project</a>
+              <div className="strip-label"><span className="index-number">03</span><span className="project-status">Interactive research</span></div>
+              <div><h3><a href="/projects/nba-free-throws">When are NBA free throws hardest?</a></h3><p>What 1.33 million attempts reveal about shot order, late-game accuracy and the value of a single point.</p></div>
+              <a className="row-link" href="/projects/nba-free-throws">View the project</a>
             </article>
             <div className="home-note"><span>My approach</span><p>Start with the business question. Build reliable evidence. Make the result clear enough to use.</p></div>
           </div>
