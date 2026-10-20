@@ -86,11 +86,11 @@ web/               React + Vite static report and precomputed public assets
 
 The raw heatmap, shooter-baseline residuals, adjusted regression contrasts and held-out model scores answer different questions and are labelled separately. Confidence intervals account for player and game dependence, conditional on generated features. They do not propagate all ability/win-model uncertainty or identify causal pressure effects. See the methodology for selection, sparse-tail and possession-model limitations.
 
-## Portfolio integration — deliberately deferred
+## Portfolio integration
 
-The existing portfolio at `/Users/olli/Desktop/portfolio` uses Next/React (via Vinext). This project uses React with no server dependence or routing assumption. The existing portfolio has not been edited.
+The portfolio at `/Users/olli/Desktop/portfolio` now includes this project in place of the Helsinki cycling placeholder. The case study is at `/projects/nba-free-throws` and the standalone interactive report is at `/nba-free-throws/`. The report is copied into the portfolio’s `public/nba-free-throws/` directory with a return link to the case study.
 
-After review, either serve the contents of `web/dist/` under `/projects/nba-free-throws/` with that trailing slash, or extract the React report into the portfolio's route and scope its CSS. Asset paths in the build are relative (`base: './'`), and the data fetch resolves against the document URL. A static subdirectory deployment must redirect the non-trailing-slash URL to the directory URL; otherwise relative assets resolve at the wrong level. Test anchors, research downloads and the data URL under the chosen route before publication. Google Fonts are optional: local serif/sans-serif fallbacks keep the page usable offline.
+For updates, build `web/dist/`, copy it into the portfolio’s `public/nba-free-throws/` directory, retain the return link in `index.html`, and rebuild the portfolio. Asset paths in the build are relative (`base: './'`), and the data fetch resolves against the document URL. A static subdirectory deployment must redirect the non-trailing-slash URL to the directory URL; otherwise relative assets resolve at the wrong level. Test anchors, research downloads and the data URL under the chosen route before publication. Google Fonts are optional: local serif/sans-serif fallbacks keep the page usable offline.
 
 ## Data provenance and rights
 
