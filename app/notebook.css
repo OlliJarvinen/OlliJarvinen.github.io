@@ -307,3 +307,59 @@ body[data-theme=margin] .site-footer .margin-footer-doodle{flex-shrink:0}
 body[data-theme=margin] .work-info h2{font:450 28px/1.2 var(--serif);letter-spacing:-.025em;margin:8px 0 12px}
 
 @media(max-width:400px){body[data-theme=margin] .work-section-heading{flex-wrap:wrap;gap:8px 20px}body[data-theme=margin] .work-section-heading h2{white-space:nowrap}}
+
+/* A personal nameplate on the notebook's opening page. */
+body[data-theme=margin] .notebook-intro{padding-top:49px}
+body[data-theme=margin] .notebook-owner-label{font:22px/1.5 var(--hand);color:var(--muted);margin-bottom:15px}
+body[data-theme=margin] .notebook-intro .notebook-owner{max-width:520px;padding:23px 28px 27px;border:1.5px solid var(--ink);border-radius:3px 6px 4px 2px;font:400 clamp(36px,4.5vw,54px)/1.3 var(--hand);letter-spacing:-.035em;background:var(--paper)}
+body[data-theme=margin] .notebook-owner span{display:block;transform:rotate(-2deg)}
+body[data-theme=margin] .notebook-intro p{max-width:420px;margin-top:27px}
+body[data-theme=margin] .notebook-intro .intro-doodle{top:195px;right:0;width:85px}
+@media(min-width:1450px){body[data-theme=margin] .notebook-intro{padding-top:75px}}
+@media(max-width:700px){body[data-theme=margin] .notebook-intro{padding-top:45px}
+body[data-theme=margin] .notebook-owner-label{font-size:20px;margin-bottom:13px}
+body[data-theme=margin] .notebook-intro .notebook-owner{font-size:clamp(30px,7.5vw,48px);padding:21px 20px 25px}
+}
+
+/* A quiet spine stays in view while the ruled page scrolls naturally. */
+body[data-theme=margin]{--paper:#faf9f6;--ink:#343330;--muted:#66635d;--line:#dedbd5;--paper-deep:#f0eeea;--selection:#ead9d1;background:var(--paper)}
+body[data-theme=margin] :is(.site-layout,.site-shell){border:0;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,rgba(110,110,110,.075) 31px,rgba(110,110,110,.075) 32px)}
+body[data-theme=margin] .site-header{padding:18px 12px 24px;background:#eeece7;border-left:3px solid #d5d1c8;border-right:1px solid #dfdbd3;view-transition-name:notebook-spine}
+body[data-theme=margin] .identity{margin:0 auto}
+body[data-theme=margin] .identity svg{width:65px;height:65px;margin:0}
+body[data-theme=margin] .site-header nav{margin-top:24px;gap:12px;align-items:stretch;font-size:19px}
+body[data-theme=margin] .site-header nav:before{display:none}
+body[data-theme=margin] .site-header nav a{width:100%;min-height:44px;padding:9px 12px;border:1px solid transparent;border-radius:2px;line-height:1.4;transition:background .15s,border-color .15s}
+body[data-theme=margin] .site-header nav a:hover{background:#f5f3ee;text-decoration:none}
+body[data-theme=margin] .site-header nav a[aria-current=page]{background:var(--paper);border-color:#d5d1c8;box-shadow:0 1px 2px #3433300a;transform:rotate(-1.5deg)}
+body[data-theme=margin] .site-header nav a[aria-current=page]:before,body[data-theme=margin] .site-header nav a[aria-current=page]:after{display:none}
+body[data-theme=margin] .site-footer{padding-top:75px;padding-bottom:30px}
+@media(min-width:701px) and (max-width:1000px){
+ body[data-theme=margin] .site-header{padding-inline:6px}
+ body[data-theme=margin] .site-header nav{font-size:17px}
+ body[data-theme=margin] .site-header nav a{padding-inline:3px}
+}
+@media(max-width:700px){
+ body[data-theme=margin] .site-header{position:static;padding:0 0 16px;background:transparent;border:0;border-bottom:1px solid var(--line);gap:8px}
+ body[data-theme=margin] .identity{margin:0}
+ body[data-theme=margin] .identity svg{width:50px;height:50px}
+ body[data-theme=margin] .site-header nav{margin-top:0;gap:6px;align-items:center;flex-basis:100%;font-size:17px}
+ body[data-theme=margin] .site-header nav a{width:auto;min-height:44px;padding:9px 10px;background:#eeece7;border-color:#dfdbd3}
+ body[data-theme=margin] .site-header nav a[aria-current=page]{border-color:var(--muted)}
+ body[data-theme=margin] .site-footer{padding-top:35px}
+}
+
+/* Native page turns keep normal links, browser history, and document scrolling. */
+@view-transition{navigation:auto}
+::view-transition-group(root){perspective:1800px}
+::view-transition-old(root){transform-origin:20% 50%;animation:notebook-turn-out 420ms cubic-bezier(.4,0,.2,1) both;backface-visibility:hidden}
+::view-transition-new(root){transform-origin:20% 50%;animation:notebook-turn-in 420ms cubic-bezier(.2,.7,.2,1) both;backface-visibility:hidden}
+::view-transition-group(notebook-spine){animation:none;z-index:1}
+::view-transition-old(notebook-spine){animation:none;opacity:0}
+::view-transition-new(notebook-spine){animation:none}
+@keyframes notebook-turn-out{from{transform:rotateY(0);opacity:1}to{transform:rotateY(-65deg);opacity:0}}
+@keyframes notebook-turn-in{from{transform:rotateY(12deg);opacity:0}to{transform:rotateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){
+ @view-transition{navigation:none}
+ ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
