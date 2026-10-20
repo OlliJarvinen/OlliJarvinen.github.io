@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./notebook.css";
+import { PageTurns } from "./components/page-turns";
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +24,7 @@ export default function RootLayout(
 ) {
   return (
     <html lang="en">
-      <body data-theme="margin">{children}</body>
+      <body data-theme="margin"><PageTurns />{children}</body>
     </html>
   );
 }
