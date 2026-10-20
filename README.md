@@ -54,3 +54,9 @@ The update command requires the Fiscal Lab source checkout and its build depende
 ## NBA free-throw research
 
 The NBA case study replaces the Helsinki cycling placeholder at `/projects/nba-free-throws`. The self-contained interactive report is tracked under `public/nba-free-throws/` and served at `/nba-free-throws/` (retain the trailing slash for relative assets and downloads). Build the research project's `web/` directory to refresh its static assets, then copy `web/dist/` into this public directory and retain the return link in `index.html`. The case-study figures use the full-sample findings documented on 16 October 2026; regenerate them when estimates change.
+
+## Notebook interface
+
+The shared navigation and notebook shell live in `app/components/site.tsx` and `app/notebook.css`. `app/components/project-list.tsx` keeps the homepage and Projects index in the same vertical order; `app/components/notebook.tsx` contains the decorative SVG sketches. The full thesis, project case studies and bundled interactive reports retain their existing routes. The About portrait uses its original color with a nearly straight paper frame and a translucent tape strip.
+
+The notebook theme keeps short hand-lettered labels large while body text, research findings and navigation within case studies use clean type. Faint background rules and margin doodles are decorative.

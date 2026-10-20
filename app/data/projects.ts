@@ -21,7 +21,7 @@ export type Project = {
 export const projects: Project[] = [{
   slug: "nba-free-throws",
   number: "01",
-  title: "When Are NBA Free Throws Hardest?",
+  title: "NBA free-throw accuracy",
   question: "How do shooter ability, attempt order and game situation relate to free-throw accuracy?",
   summary: "An interactive investigation of 1.33 million NBA free throws: attempt order, late-game accuracy and the predictive value of win leverage.",
   methods: ["Python", "statistical modelling", "React", "data visualization"],
@@ -40,7 +40,7 @@ export const projects: Project[] = [{
 }, {
   slug: 'finland-fiscal-lab',
   number: '02',
-  title: 'Finland Fiscal Lab',
+  title: 'Finland’s debt and policy simulator',
   question: 'How do policy choices and economic assumptions change Finland’s deficit and public-debt trajectory?',
   summary: 'Why closing Finland’s deficit takes more than a savings target: a data story about interest, debt and the trade-offs behind fiscal adjustment.',
   methods: ['Python', 'SQL', 'TypeScript', 'React', 'fiscal modelling', 'open data'],

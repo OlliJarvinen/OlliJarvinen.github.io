@@ -1,45 +1,9 @@
-export function Header({ current }: { current?: string }) {
-  const links = [
-    ["Projects", "/projects", "projects"],
-    ["Thesis", "/thesis", "thesis"],
-    ["Education", "/education", "education"],
-    ["About", "/about", "about"],
-  ];
-  return (
-    <header className="site-header container">
-      <a className="wordmark" href="/">
-        <span className="wordmark-mark">OJ</span>
-        <span>Olli Järvinen</span>
-      </a>
-      <nav className="main-nav" aria-label="Main navigation">
-        {links.map(([label, href, key]) => (
-          <a
-            key={href}
-            href={href}
-            aria-current={current === key ? "page" : undefined}
-          >
-            {label}
-          </a>
-        ))}
-        <a className="header-contact" href="/cv">CV ↗</a>
-      </nav>
-    </header>
-  );
+import { Monogram, Paperclip, PenLoop } from "./notebook";
+export function Header({ current = "home" }: { current?: string }) {
+ const links = [["Home", "/", "home"], ["Projects", "/projects", "projects"], ["Education", "/education", "education"], ["About", "/about", "about"], ["CV", "/cv", "cv"]];
+ return <header className="site-header"><a className="identity" href="/" aria-label="Olli Järvinen, home"><Monogram/><span>Olli Järvinen</span></a><nav className="main-nav" aria-label="Main navigation">{links.map(([label,href,key])=><a key={key} href={href} aria-current={current===key || (current==='thesis' && key==='projects') ? 'page':undefined}>{label}</a>)}</nav><span className="rail-label">Data &amp; business analytics</span><Paperclip/></header>;
 }
-export function Footer() {
-  return (
-    <footer className="footer">
-      <div className="container footer-inner">
-        <span>© 2026 Olli Järvinen · Data &amp; Business Analytics</span>
-        <div className="footer-links">
-          <a href="/cv">CV ↗</a>
-          <a href="/about">About ↗</a>
-          <span>Contact details in CV</span>
-        </div>
-      </div>
-    </footer>
-  );
-}
+export function Footer(){return <footer className="site-footer"><PenLoop/><span>© 2026 Olli Järvinen · Data &amp; business analytics</span><a href="/cv">CV</a></footer>;}
 export function SectionLabel({ children }: { children: React.ReactNode }) {
   return <div className="eyebrow">{children}</div>;
 }

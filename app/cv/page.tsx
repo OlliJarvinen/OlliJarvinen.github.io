@@ -2,7 +2,7 @@ import { Footer, Header, SectionLabel } from "../components/site";
 
 export default function CvPage() {
   return (
-    <div className="site-shell">
+    <div className="site-shell site-layout">
       <Header current="cv" />
       <main>
         <section className="page-hero">
@@ -41,7 +41,7 @@ export default function CvPage() {
                   final document is added.
                 </p>
                 <a className="button" href="/about">
-                  Read the profile <span>↗</span>
+                  Read the profile <span></span>
                 </a>
               </div>
             </div>

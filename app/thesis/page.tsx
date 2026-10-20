@@ -23,17 +23,17 @@ function ThesisFigure({ src, alt, width, height, children }: {
       <a href={src} aria-label="Open thesis figure at full size">
         <Image src={src} alt={alt} width={width} height={height} />
       </a>
-      <figcaption>{children} <a href={src}>View full size ↗</a></figcaption>
+      <figcaption>{children} <a href={src}>View full size </a></figcaption>
     </figure>
   );
 }
 
 export default function ThesisPage() {
   return (
-    <div className="site-shell thesis-page">
+    <div className="site-shell site-layout thesis-page">
       <PageIntro
         label="Master’s thesis / Aalto University / 2026"
-        title="Benchmarking teaching efficiency at Aalto BIZ"
+        title="Aalto teaching efficiency"
         current="thesis"
       >
         I combined service operations theory with European university data to
@@ -141,7 +141,7 @@ export default function ThesisPage() {
               </section>
 
               <section className="case-section" id="findings">
-                <h2>Strong capacity. Weaker completion.</h2>
+                <h2>Strong capacity. Weaker completion</h2>
                 <p>
                   Aalto BIZ ranked at the 82nd percentile in overall efficiency
                   across the full sample, but was close to the median of specialised
