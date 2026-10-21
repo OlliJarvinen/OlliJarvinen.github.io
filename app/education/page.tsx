@@ -1,4 +1,7 @@
+import type { Metadata } from "next";
 import { Footer, PageIntro } from "../components/site";
+
+export const metadata: Metadata = { title: "Education" };
 
 export default function EducationPage() {
   return (
@@ -83,7 +86,7 @@ export default function EducationPage() {
                 </div>
                 <div className="field">
                   <label>Coursework</label>
-                  <span>Borad undergraduate business studies, Data bases and data structures, Python, SQL, Power BI</span>
+                  <span>Broad undergraduate business studies, Databases and data structures, Python, SQL, Power BI</span>
                 </div>
                 <div className="field">
                   <label>Location</label>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { FiscalCaseStudy } from "../../components/fiscal-case-study";
 import { notFound } from "next/navigation";
 import { Footer, Header, SectionLabel, Tags, Visual } from "../../components/site";
@@ -8,6 +9,15 @@ export function generateStaticParams() {
   return projects.map(({ slug }) => ({ slug }));
 }
 export const dynamicParams = false;
+
+export function generateMetadata(
+  { params }: { params: { slug: string } },
+): Metadata {
+  const project = getProject(params.slug);
+  if (!project) notFound();
+  return { title: project.title };
+}
+
 export default function ProjectCaseStudy(
   { params }: { params: { slug: string } },
 ) {

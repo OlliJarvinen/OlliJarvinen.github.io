@@ -1,4 +1,7 @@
+import type { Metadata } from "next";
 import { Footer, Header, SectionLabel } from "../components/site";
+
+export const metadata: Metadata = { title: "CV" };
 
 export default function CvPage() {
   return (

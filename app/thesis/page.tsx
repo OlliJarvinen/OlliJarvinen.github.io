@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Footer, PageIntro, Tags } from "../components/site";
 
@@ -27,6 +28,8 @@ function ThesisFigure({ src, alt, width, height, children }: {
     </figure>
   );
 }
+
+export const metadata: Metadata = { title: "Aalto teaching efficiency" };
 
 export default function ThesisPage() {
   return (
