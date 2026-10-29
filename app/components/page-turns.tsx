@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-// Keep the notebook spine stationary and give the arriving sheet a brief reveal.
+// Turn the sheet around the stationary notebook spine.
 export function PageTurns() {
   const pathname = usePathname();
   const router = useRouter();
@@ -12,20 +12,23 @@ export function PageTurns() {
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const animations: Animation[] = [];
     const prefetched = new Set<string>();
+    let turnId = 0;
+    const sheets = () => document.querySelectorAll<HTMLElement>(
+      ".site-shell > :not(.site-header)",
+    );
 
     function reset() {
+      turnId++;
       animations.splice(0).forEach((animation) => animation.cancel());
     }
 
     function enter() {
       reset();
       if (motion.matches) return;
-      document.querySelectorAll<HTMLElement>(
-        ".site-shell > :not(.site-header)",
-      ).forEach((sheet) => animations.push(sheet.animate([
-        { transform: "translateX(8px)", opacity: 0.85 },
-        { transform: "translateX(0)", opacity: 1 },
-      ], { duration: 180, easing: "cubic-bezier(.2,.7,.2,1)" })));
+      sheets().forEach((sheet) => animations.push(sheet.animate([
+        { transform: "perspective(1600px) rotateY(24deg)", opacity: 0.4 },
+        { transform: "perspective(1600px) rotateY(0deg)", opacity: 1 },
+      ], { duration: 240, easing: "cubic-bezier(.2,.7,.2,1)" })));
     }
 
     function destinationFor(event: Event) {
@@ -55,9 +58,23 @@ export function PageTurns() {
 
       event.preventDefault();
       event.stopPropagation();
-      // Start loading immediately; navigation never waits for an animation.
       reset();
-      router.push(destination);
+      if (motion.matches) {
+        router.push(destination);
+        return;
+      }
+
+      // Load the destination while the outgoing sheet turns, rather than after it.
+      prefetch(event);
+      const currentTurn = turnId;
+      const outgoing = Array.from(sheets(), (sheet) => sheet.animate([
+        { transform: "perspective(1600px) rotateY(0deg)", opacity: 1 },
+        { transform: "perspective(1600px) rotateY(-55deg)", opacity: 0.15 },
+      ], { duration: 120, easing: "ease-in", fill: "forwards" }));
+      animations.push(...outgoing);
+      Promise.all(outgoing.map((animation) => animation.finished)).then(() => {
+        if (currentTurn === turnId) router.push(destination);
+      }).catch(() => { /* A newer click, route change or unmount cancelled the turn. */ });
     }
 
     enter();

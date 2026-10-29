@@ -352,3 +352,6 @@ body[data-theme=margin] .site-footer{padding-top:75px;padding-bottom:30px}
  body[data-theme=margin] .site-header nav a[aria-current=page]{border-color:var(--muted)}
  body[data-theme=margin] .site-footer{padding-top:35px}
 }
+
+/* The sheet turns around its left edge while the spine stays still. */
+body[data-theme=margin] .site-shell > :not(.site-header){transform-origin:left center;backface-visibility:hidden}
