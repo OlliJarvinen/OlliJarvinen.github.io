@@ -3,41 +3,32 @@
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
-// Animate the sheet independently of the stationary notebook spine.
+// Keep the notebook spine stationary and give the arriving sheet a brief reveal.
 export function PageTurns() {
   const pathname = usePathname();
   const router = useRouter();
 
   useEffect(() => {
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sheets = () => document.querySelectorAll<HTMLElement>(
-      ".site-shell > :not(.site-header)",
-    );
-    let turning = false;
-    let cancelled = false;
-    let turnId = 0;
     const animations: Animation[] = [];
+    const prefetched = new Set<string>();
 
     function reset() {
-      turnId++;
-      turning = false;
       animations.splice(0).forEach((animation) => animation.cancel());
     }
 
     function enter() {
-      // A cached document can still hold the outgoing fill-forwards animation.
-      // Clear it before entering, otherwise it wins again once entry finishes.
       reset();
       if (motion.matches) return;
-      sheets().forEach((sheet) => animations.push(sheet.animate([
-        { transform: "perspective(1600px) rotateY(24deg)", opacity: 0.25 },
-        { transform: "perspective(1600px) rotateY(0deg)", opacity: 1 },
-      ], { duration: 520, easing: "cubic-bezier(.2,.7,.2,1)" })));
+      document.querySelectorAll<HTMLElement>(
+        ".site-shell > :not(.site-header)",
+      ).forEach((sheet) => animations.push(sheet.animate([
+        { transform: "translateX(8px)", opacity: 0.85 },
+        { transform: "translateX(0)", opacity: 1 },
+      ], { duration: 180, easing: "cubic-bezier(.2,.7,.2,1)" })));
     }
 
-    function turn(event: MouseEvent) {
-      if (event.defaultPrevented || event.button !== 0 || event.metaKey ||
-        event.ctrlKey || event.shiftKey || event.altKey || motion.matches) return;
+    function destinationFor(event: Event) {
       const link = event.target instanceof Element
         ? event.target.closest<HTMLAnchorElement>("a[href]") : null;
       if (!link || link.hasAttribute("download") ||
@@ -46,37 +37,46 @@ export function PageTurns() {
       if (destination.origin !== location.origin ||
         destination.pathname === location.pathname ||
         !/^\/(?:projects(?:\/[^/]+)?|about|education|cv|thesis)?\/?$/.test(destination.pathname)) return;
+      return destination.pathname + destination.search + destination.hash;
+    }
+
+    function prefetch(event: Event) {
+      const destination = destinationFor(event);
+      if (!destination || prefetched.has(destination)) return;
+      prefetched.add(destination);
+      router.prefetch(destination);
+    }
+
+    function turn(event: MouseEvent) {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey ||
+        event.ctrlKey || event.shiftKey || event.altKey) return;
+      const destination = destinationFor(event);
+      if (!destination) return;
 
       event.preventDefault();
       event.stopPropagation();
-      if (turning) return;
+      // Start loading immediately; navigation never waits for an animation.
       reset();
-      turning = true;
-      const currentTurn = turnId;
-      const outgoing = Array.from(sheets(), (sheet) => sheet.animate([
-        { transform: "perspective(1600px) rotateY(0deg)", opacity: 1 },
-        { transform: "perspective(1600px) rotateY(-55deg)", opacity: 0.15 },
-      ], { duration: 300, easing: "ease-in", fill: "forwards" }));
-      animations.push(...outgoing);
-      Promise.all(outgoing.map((animation) => animation.finished)).then(() => {
-        if (!cancelled && currentTurn === turnId) {
-          router.push(destination.pathname + destination.search + destination.hash);
-        }
-      }).catch(() => { /* A route change or unmount cancelled the turn. */ });
+      router.push(destination);
     }
 
     enter();
     document.addEventListener("click", turn, true);
-    window.addEventListener("pageshow", enter);
+    document.addEventListener("pointerover", prefetch);
+    document.addEventListener("focusin", prefetch);
     window.addEventListener("pagehide", reset);
+    window.addEventListener("pageshow", reset);
     window.addEventListener("popstate", reset);
+    motion.addEventListener("change", reset);
     return () => {
-      cancelled = true;
       reset();
       document.removeEventListener("click", turn, true);
-      window.removeEventListener("pageshow", enter);
+      document.removeEventListener("pointerover", prefetch);
+      document.removeEventListener("focusin", prefetch);
       window.removeEventListener("pagehide", reset);
+      window.removeEventListener("pageshow", reset);
       window.removeEventListener("popstate", reset);
+      motion.removeEventListener("change", reset);
     };
   }, [pathname, router]);
 
